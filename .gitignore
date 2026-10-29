@@ -1,0 +1,5 @@
+﻿node_modules/
+*.log
+test-*.mjs
+make-icon.py
+market-entry.yml

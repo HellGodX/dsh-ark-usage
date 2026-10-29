@@ -1,0 +1,38 @@
+{
+    "name":  "dsh-ark-usage",
+    "version":  "0.1.0",
+    "description":  "A DeepSeek Harness sidebar plugin that shows Volcengine Ark Coding Plan usage (5-hour / weekly / monthly quota, by request count) by reading the logged-in arkcli profile. 火山方舟 Coding Plan 用量侧边栏：5 小时 / 周 / 月三档配额百分比与重置时间。",
+    "type":  "module",
+    "main":  "lib/index.js",
+    "icon":  "./icon.png",
+    "license":  "MIT",
+    "files":  [
+                  "lib",
+                  "icon.png",
+                  "cordis.patch.yml",
+                  "README.md"
+              ],
+    "exports":  {
+                    ".":  "./lib/index.js",
+                    "./client":  "./lib/client.js",
+                    "./package.json":  "./package.json"
+                },
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           },
+                "client":  {
+                               "platform":  "web"
+                           }
+            },
+    "keywords":  [
+                     "dsh",
+                     "deepseek-harness",
+                     "plugin",
+                     "volcengine",
+                     "ark",
+                     "coding-plan",
+                     "usage",
+                     "quota"
+                 ]
+}
