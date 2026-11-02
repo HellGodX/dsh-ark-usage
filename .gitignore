@@ -3,3 +3,5 @@
 test-*.mjs
 make-icon.py
 market-entry.yml
+make-whale.py
+patch-widget.py

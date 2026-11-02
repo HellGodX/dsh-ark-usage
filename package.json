@@ -1,38 +1,49 @@
 {
-    "name":  "dsh-ark-usage",
-    "version":  "0.1.0",
-    "description":  "A DeepSeek Harness sidebar plugin that shows Volcengine Ark Coding Plan usage (5-hour / weekly / monthly quota, by request count) by reading the logged-in arkcli profile. 火山方舟 Coding Plan 用量侧边栏：5 小时 / 周 / 月三档配额百分比与重置时间。",
-    "type":  "module",
-    "main":  "lib/index.js",
-    "icon":  "./icon.png",
-    "license":  "MIT",
-    "files":  [
-                  "lib",
-                  "icon.png",
-                  "cordis.patch.yml",
-                  "README.md"
-              ],
-    "exports":  {
-                    ".":  "./lib/index.js",
-                    "./client":  "./lib/client.js",
-                    "./package.json":  "./package.json"
-                },
-    "dsh":  {
-                "bundle":  {
-                               "patch":  "./cordis.patch.yml"
-                           },
-                "client":  {
-                               "platform":  "web"
-                           }
-            },
-    "keywords":  [
-                     "dsh",
-                     "deepseek-harness",
-                     "plugin",
-                     "volcengine",
-                     "ark",
-                     "coding-plan",
-                     "usage",
-                     "quota"
-                 ]
+  "name": "dsh-ark-usage",
+  "version": "0.1.0",
+  "description": "Volcengine Ark Coding Plan usage widget for DeepSeek Harness: 5-hour / weekly / monthly quota plus a local token-to-CNY spend summary. 火山方舟 Coding Plan 用量挂件：三档配额百分比 + 本机 token 折算消耗。",
+  "type": "module",
+  "main": "lib/index.js",
+  "icon": "./icon.png",
+  "license": "MIT",
+  "author": "HellGodX",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HellGodX/dsh-ark-usage.git"
+  },
+  "homepage": "https://github.com/HellGodX/dsh-ark-usage#readme",
+  "bugs": {
+    "url": "https://github.com/HellGodX/dsh-ark-usage/issues"
+  },
+  "files": [
+    "lib",
+    "icon.png",
+    "cordis.patch.yml",
+    "README.md",
+    "whale.png"
+  ],
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin",
+    "volcengine",
+    "ark",
+    "coding-plan",
+    "usage",
+    "quota"
+  ]
 }
