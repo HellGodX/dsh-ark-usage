@@ -1,6 +1,6 @@
 {
   "name": "dsh-ark-usage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Volcengine Ark Coding Plan usage widget for DeepSeek Harness: 5-hour / weekly / monthly quota plus a local token-to-CNY spend summary. 火山方舟 Coding Plan 用量挂件：三档配额百分比 + 本机 token 折算消耗。",
   "type": "module",
   "main": "lib/index.js",
